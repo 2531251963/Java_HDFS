@@ -25,7 +25,7 @@ public class HadoopInstance {
             Configuration configuration = new Configuration();
             configuration.set("dfs.client.use.datanode.hostname", "true");
             try {
-                fileSystem = FileSystem.get(new URI("hdfs://39.97.110.143:9000"), configuration, "root");
+                fileSystem = FileSystem.get(new URI("hdfs://liyihe:9000"), configuration, "root");
             } catch (Exception e) {
                 e.printStackTrace();
             }
